@@ -16,9 +16,12 @@ end
 def find_the_cheese(snacks)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  target = nil
   cheese_types.each do |cheese|
     if snacks.include?(cheese)
-      cheese
+      target = cheese
+      break
     end
   end
+  target
 end
